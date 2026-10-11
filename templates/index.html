@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENTAP-01 HUD</title>
+
+    <!-- 1. INILAH CARA KITA PANGGIL CSS! -->
+    <!-- "../" bermaksud kita undur satu folder, masuk ke folder static, dan cari style.css -->
+    <link rel="stylesheet" href="../static/style.css?v=1">
+
+    <!-- 2. PANGGIL FONT JURA DARI GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- Saya letak warna kelabu (grey) pada background sementara waktu supaya kotak hitam tu nampak jelas -->
+
+<body style="background-color: #a0a0a0; margin: 0; height: 100vh; overflow: hidden;">
+
+    <!-- Ini adalah kotak hitam utama -->
+    <div class="ammo-box">
+
+        <!-- Teks atas kanan -->
+        <div class="status-text">RENTAP-01 | READY </div>
+
+        <!-- Teks kiri bawah -->
+        <div class="mode-text">
+            <div class="mode-bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <span class="mode-label">AUTO</span>
+        </div>
+
+        <!-- Nombor peluru -->
+        <div class="ammo-count">
+            <span class="current-ammo">300</span>
+            <div class="divider-bar"></div>
+            <span class="max-ammo">300</span>
+        </div>
+
+        <!-- Progress Bar di bawah -->
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
